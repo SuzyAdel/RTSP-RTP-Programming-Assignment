@@ -3,7 +3,7 @@ RTSP/RTP Programming Assignment Recap
 # Task Overview
 You need to build a system with two main components:
 
-#RTP Server:
+# RTP Server:
 
 Takes stored video frames
 
