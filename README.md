@@ -24,12 +24,11 @@ Must include sequence numbers and timestamps
 
 Issues play/pause commands to control video streaming
 
-
-![image](https://github.com/user-attachments/assets/bb0faa83-3645-4644-9887-1556c16259cd)
-
 Technical Requirements
 The system involves real-time streaming protocol (RTSP) for control and real-time transport protocol (RTP) for actual media delivery
 
 UDP will be used as the transport protocol for RTP packets
 
 Sequence numbers and timestamps are required in RTP headers for proper media synchronization
+
+![image](https://github.com/user-attachments/assets/bb0faa83-3645-4644-9887-1556c16259cd)
