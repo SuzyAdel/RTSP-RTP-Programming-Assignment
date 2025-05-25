@@ -2,12 +2,12 @@
 
 import socket
 
-SERVER_IP   = "127.0.0.1"
-CONTROL_PORT = 8554
+SERVER_IP   = "127.0.0.1" # Change to your RTSP server IP
+CONTROL_PORT = 8554 # Change to your RTSP server control port
 
 def send(cmd, conn):
-    conn.sendall(f"{cmd}\n".encode())
-    response = conn.recv(4096).decode()
+    conn.sendall(f"{cmd}\n".encode()) # Send command to server
+    response = conn.recv(4096).decode() # Receive response from server
     print(f"🧾 Server Response:\n{response}")
 
 if __name__ == "__main__":
@@ -37,7 +37,7 @@ if __name__ == "__main__":
                     send("PAUSE", sock)
                 playing = not playing
             else:
-                print("❓ Unknown input. Use Enter to toggle, 'E' to exit.")
+                print("❓ Unknown input. Use Enter to toggle, 'E' to exit.") # Handle unknown input
 
         sock.close()
 
