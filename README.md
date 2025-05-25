@@ -19,6 +19,9 @@ This repository presents a comprehensive implementation of a real-time video str
   * Constructs UDP segments to ensure real-time delivery.
   * Sends RTP packets continuously to client socket.
 
+
+![RTSP/RTP System Diagram](https://github.com/user-attachments/assets/f0cdb547-dec2-4ba9-a4ee-1803096e917e)
+
 ### 2. RTSP Client
 
 * **Function:** Acts as a control interface to send commands (e.g., play, pause) to the RTP server for managing video streaming.
@@ -26,7 +29,8 @@ This repository presents a comprehensive implementation of a real-time video str
 
   * Implements RTSP protocol for session control.
   * Handles play/pause commands to start or stop the media stream effectively.
-
+  
+![image](https://github.com/user-attachments/assets/bb0faa83-3645-4644-9887-1556c16259cd)
 ---
 
 ## Technical Highlights
@@ -44,11 +48,6 @@ This repository presents a comprehensive implementation of a real-time video str
 
 ---
 
-## Architecture Diagram
-
-![RTSP/RTP System Diagram](https://github.com/user-attachments/assets/f0cdb547-dec2-4ba9-a4ee-1803096e917e)
-
----
 
 ## Workflow Summary
 
